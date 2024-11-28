@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WNC_G13")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b28e336af2b45bd41b194ccd6ae16f5802a25895")]
 [assembly: System.Reflection.AssemblyProductAttribute("WNC_G13")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WNC_G13")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
