@@ -1,0 +1,327 @@
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\appsettings.Development.json
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\appsettings.json
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\WNC_G13.staticwebassets.runtime.json
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\WNC_G13.exe
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\WNC_G13.deps.json
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\WNC_G13.runtimeconfig.json
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\WNC_G13.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\WNC_G13.pdb
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Humanizer.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.IO.Pipelines.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\BTLWNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.AssemblyReference.cache
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.GeneratedMSBuildEditorConfig.editorconfig
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfoInputs.cache
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfo.cs
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.CoreCompileInputs.cache
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.MvcApplicationPartsAssemblyInfo.cache
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cache
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cs
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\staticwebassets.build.json
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\staticwebassets.development.json
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.WNC_G13.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.build.WNC_G13.props
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WNC_G13.props
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WNC_G13.props
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\staticwebassets.pack.json
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\scopedcss\bundle\WNC_G13.styles.css
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\scopedcss\projectbundle\WNC_G13.bundle.scp.css
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.Up2Date
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.dll
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\refint\WNC_G13.dll
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.pdb
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\WNC_G13.genruntimeconfig.cache
+D:\BTLWNC\WNC_G13\obj\Debug\net6.0\ref\WNC_G13.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\appsettings.Development.json
+D:\WebNC\WNC_G13\bin\Debug\net6.0\appsettings.json
+D:\WebNC\WNC_G13\bin\Debug\net6.0\WNC_G13.staticwebassets.runtime.json
+D:\WebNC\WNC_G13\bin\Debug\net6.0\WNC_G13.exe
+D:\WebNC\WNC_G13\bin\Debug\net6.0\WNC_G13.deps.json
+D:\WebNC\WNC_G13\bin\Debug\net6.0\WNC_G13.runtimeconfig.json
+D:\WebNC\WNC_G13\bin\Debug\net6.0\WNC_G13.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\WNC_G13.pdb
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Humanizer.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.IO.Pipelines.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\WebNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.AssemblyReference.cache
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfoInputs.cache
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfo.cs
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.CoreCompileInputs.cache
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.MvcApplicationPartsAssemblyInfo.cache
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cache
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cs
+D:\WebNC\WNC_G13\obj\Debug\net6.0\staticwebassets.build.json
+D:\WebNC\WNC_G13\obj\Debug\net6.0\staticwebassets.development.json
+D:\WebNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.WNC_G13.Microsoft.AspNetCore.StaticWebAssets.props
+D:\WebNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.build.WNC_G13.props
+D:\WebNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WNC_G13.props
+D:\WebNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WNC_G13.props
+D:\WebNC\WNC_G13\obj\Debug\net6.0\staticwebassets.pack.json
+D:\WebNC\WNC_G13\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\WebNC\WNC_G13\obj\Debug\net6.0\scopedcss\bundle\WNC_G13.styles.css
+D:\WebNC\WNC_G13\obj\Debug\net6.0\scopedcss\projectbundle\WNC_G13.bundle.scp.css
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.Up2Date
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.dll
+D:\WebNC\WNC_G13\obj\Debug\net6.0\refint\WNC_G13.dll
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.pdb
+D:\WebNC\WNC_G13\obj\Debug\net6.0\WNC_G13.genruntimeconfig.cache
+D:\WebNC\WNC_G13\obj\Debug\net6.0\ref\WNC_G13.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\appsettings.Development.json
+D:\WNC\WNC_G13\bin\Debug\net6.0\appsettings.json
+D:\WNC\WNC_G13\bin\Debug\net6.0\WNC_G13.staticwebassets.runtime.json
+D:\WNC\WNC_G13\bin\Debug\net6.0\WNC_G13.exe
+D:\WNC\WNC_G13\bin\Debug\net6.0\WNC_G13.deps.json
+D:\WNC\WNC_G13\bin\Debug\net6.0\WNC_G13.runtimeconfig.json
+D:\WNC\WNC_G13\bin\Debug\net6.0\WNC_G13.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\WNC_G13.pdb
+D:\WNC\WNC_G13\bin\Debug\net6.0\Humanizer.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.IO.Pipelines.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\WNC\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.AssemblyReference.cache
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.GeneratedMSBuildEditorConfig.editorconfig
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfoInputs.cache
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfo.cs
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.CoreCompileInputs.cache
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.MvcApplicationPartsAssemblyInfo.cache
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cache
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cs
+D:\WNC\WNC_G13\obj\Debug\net6.0\staticwebassets.build.json
+D:\WNC\WNC_G13\obj\Debug\net6.0\staticwebassets.development.json
+D:\WNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.WNC_G13.Microsoft.AspNetCore.StaticWebAssets.props
+D:\WNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.build.WNC_G13.props
+D:\WNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WNC_G13.props
+D:\WNC\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WNC_G13.props
+D:\WNC\WNC_G13\obj\Debug\net6.0\staticwebassets.pack.json
+D:\WNC\WNC_G13\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\WNC\WNC_G13\obj\Debug\net6.0\scopedcss\bundle\WNC_G13.styles.css
+D:\WNC\WNC_G13\obj\Debug\net6.0\scopedcss\projectbundle\WNC_G13.bundle.scp.css
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.Up2Date
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.dll
+D:\WNC\WNC_G13\obj\Debug\net6.0\refint\WNC_G13.dll
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.pdb
+D:\WNC\WNC_G13\obj\Debug\net6.0\WNC_G13.genruntimeconfig.cache
+D:\WNC\WNC_G13\obj\Debug\net6.0\ref\WNC_G13.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\appsettings.Development.json
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\appsettings.json
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\WNC_G13.staticwebassets.runtime.json
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\WNC_G13.exe
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\WNC_G13.deps.json
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\WNC_G13.runtimeconfig.json
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\WNC_G13.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\WNC_G13.pdb
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Humanizer.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Collections.Immutable.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.IO.Pipelines.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ltw nâng cao\WNC_G13\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.AssemblyReference.cache
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.GeneratedMSBuildEditorConfig.editorconfig
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfoInputs.cache
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.AssemblyInfo.cs
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.CoreCompileInputs.cache
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.MvcApplicationPartsAssemblyInfo.cache
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cache
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.RazorAssemblyInfo.cs
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\staticwebassets.build.json
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\staticwebassets.development.json
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.WNC_G13.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.build.WNC_G13.props
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WNC_G13.props
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WNC_G13.props
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\staticwebassets.pack.json
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\scopedcss\bundle\WNC_G13.styles.css
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\scopedcss\projectbundle\WNC_G13.bundle.scp.css
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.csproj.Up2Date
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.dll
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\refint\WNC_G13.dll
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.pdb
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\WNC_G13.genruntimeconfig.cache
+D:\ltw nâng cao\WNC_G13\obj\Debug\net6.0\ref\WNC_G13.dll

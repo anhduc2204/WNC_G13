@@ -1,0 +1,123 @@
+@model WNC_G13.Models.ProjectTask
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Task";
+}
+
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" method="post">
+     <input type="hidden" name="ProjectId" value="@ViewBag.ProjectId"/>
+
+    <div class="form-group">
+        <label asp-for="TaskName">Tên Task:</label>
+        <input asp-for="TaskName" class="form-control" />
+        <span asp-validation-for="TaskName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description">Mô tả:</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Status">Trạng thái:</label>
+        <select asp-for="Status" class="form-control">
+            <option value="0">Chưa bắt đầu</option>
+            <option value="1">Cần làm</option>
+            <option value="2">Đang tiến hành</option>
+            <option value="3">Hoàn thành</option>
+            <option value="4">Bị trì hoãn</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DueDate">Ngày hoàn thành:</label>
+        <input asp-for="DueDate" type="date" class="form-control" />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Priority">Độ ưu tiên:</label>
+        <select asp-for="Priority" class="form-control">
+            <option value="1">Thấp</option>
+            <option value="2">Trung bình</option>
+            <option value="3">Cao</option>
+        </select>
+        <span asp-validation-for="Priority" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UserId">Thành viên thực hiện:</label>
+        <select asp-for="UserId" class="form-control" id="memberList">
+            <option value= "-1" selected>Chọn thành viên</nav></option>
+        </select>
+        <span asp-validation-for="UserId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+    <a href="@Url.Action("Index", "ProjectTask", new { projectId = ViewBag.ProjectId})" class="btn btn-secondary">Hủy</a>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        const projectId = @Html.Raw(ViewBag.ProjectId);
+        var currentUserId = @Html.Raw(Model.UserId);
+        console.log('currentUserId ' + currentUserId);
+        const memberList = document.getElementById('memberList');
+
+        try {
+            // Gọi API để lấy danh sách thành viên
+            const response = await fetch(`/ProjectTask/GetMembers?projectId=${projectId}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            // Kiểm tra phản hồi từ API
+            if (!response.ok) {
+                throw new Error('Không thể lấy danh sách thành viên');
+            }
+
+            // Chuyển đổi dữ liệu JSON
+            const members = await response.json();
+
+            // Xóa nội dung cũ
+            const option = document.createElement('option');
+            // Nếu không có thành viên
+            if (members.length === 0) {
+                option.innerHTML = 'Không có thành viên';
+                option.disabled = true;
+                memberList.appendChild(option);
+                return;
+            }
+
+            // Thêm từng thành viên vào bảng
+            members.forEach((member, index) => {
+                option.value = member.userId;
+                if(member.userId === currentUserId){
+                    option.selected = true;
+                }
+                option.innerHTML = `
+                    <span>${member.fullName} - ${member.email}</span>
+                `;
+                memberList.appendChild(option);
+            });
+        } catch (error) {
+            console.error('Error:', error);
+            const option = document.createElement('option');
+            option.innerHTML = 'Không có thành viên';
+            option.disabled = true;
+            memberList.appendChild(option);
+        }
+    });
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

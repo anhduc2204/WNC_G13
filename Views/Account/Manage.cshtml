@@ -1,0 +1,63 @@
+@model IEnumerable<WNC_G13.Models.User>
+
+@{
+    ViewData["Title"] = "Quản Lý Tài Khoản";
+}
+
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<h2>Quản Lý Tài Khoản</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên Đầy Đủ</th>
+            <th>Email</th>
+            <th>Vai Trò</th>
+            <th>Thao Tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>@(user.Role == Role.AdminRole ? "Quản Trị" : "Người Dùng")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-warning">Chỉnh Sửa</a>
+                    <button class="btn btn-danger delete-btn" data-id="@user.Id">Xóa</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.delete-btn').click(function () {
+            var userId = $(this).data('id');
+            if (confirm('Bạn có chắc chắn muốn xóa tài khoản này không?')) {
+                $.ajax({
+                    url: '@Url.Action("Delete", "Account")', // Thay đổi tên action và controller nếu cần
+                    type: 'POST',
+                    data: { id: userId },
+                    success: function (response) {
+                        if (response.success) {
+                            alert('Tài khoản đã được xóa thành công.');
+                            location.reload(); // Tải lại trang để cập nhật danh sách
+                        } else {
+                            alert('Đã xảy ra lỗi: ' + response.message); // Hiển thị thông báo lỗi
+                        }
+                    },
+                    error: function () {
+                        alert('Đã xảy ra lỗi khi cố gắng xóa tài khoản.');
+                    }
+                });
+            }
+        });
+    });
+</script>

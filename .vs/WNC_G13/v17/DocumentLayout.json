@@ -1,0 +1,403 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ltw n\u00E2ng cao\\WNC_G13\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\controllers\\projecttaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:controllers\\projecttaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\views\\projecttask\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:views\\projecttask\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\views\\projecttask\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:views\\projecttask\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\migrations\\wncg13contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:migrations\\wncg13contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ltw n\u00E2ng cao\\WNC_G13\\Migrations\\20241126175313_updateMigration1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241126175313_updateMigration1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\userproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\userproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\controllers\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:controllers\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\controllers\\channelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:controllers\\channelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\projectstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\projectstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\taskstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\taskstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|d:\\ltw n\u00E2ng cao\\wnc_g13\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B8388E-5A87-4C74-B73A-7470443D1CD3}|WNC_G13.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Views\\ProjectTask\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\ProjectTask\\Create.cshtml",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Views\\ProjectTask\\Create.cshtml",
+              "RelativeToolTip": "Views\\ProjectTask\\Create.cshtml",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAqwEMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T17:57:57.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectTaskController.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\ProjectTaskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectTaskController.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\ProjectTaskController.cs",
+              "RelativeToolTip": "Controllers\\ProjectTaskController.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAqwHoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T17:55:46.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WNCG13ContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Migrations\\WNCG13ContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\WNCG13ContextModelSnapshot.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Migrations\\WNCG13ContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\WNCG13ContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T17:53:26.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241126175313_updateMigration1.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Migrations\\20241126175313_updateMigration1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241126175313_updateMigration1.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Migrations\\20241126175313_updateMigration1.cs",
+              "RelativeToolTip": "Migrations\\20241126175313_updateMigration1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T17:53:14.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Members.cshtml",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Views\\ProjectTask\\Members.cshtml",
+              "RelativeDocumentMoniker": "Views\\ProjectTask\\Members.cshtml",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Views\\ProjectTask\\Members.cshtml",
+              "RelativeToolTip": "Views\\ProjectTask\\Members.cshtml",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAAPcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T10:52:48.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChannelController.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\ChannelController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChannelController.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\ChannelController.cs",
+              "RelativeToolTip": "Controllers\\ChannelController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:25:09.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:54.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:42.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjectTask.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\ProjectTask.cs",
+              "RelativeDocumentMoniker": "Models\\ProjectTask.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\ProjectTask.cs",
+              "RelativeToolTip": "Models\\ProjectTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:29.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Organization.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Organization.cs",
+              "RelativeDocumentMoniker": "Models\\Organization.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Organization.cs",
+              "RelativeToolTip": "Models\\Organization.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:25.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:27.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserProject.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\UserProject.cs",
+              "RelativeDocumentMoniker": "Models\\UserProject.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\UserProject.cs",
+              "RelativeToolTip": "Models\\UserProject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:43.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrganizationController.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\OrganizationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrganizationController.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\OrganizationController.cs",
+              "RelativeToolTip": "Controllers\\OrganizationController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:24:18.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAqwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:25:30.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T09:25:03.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:02.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-16T12:24:06.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TaskStatus.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\TaskStatus.cs",
+              "RelativeDocumentMoniker": "Models\\TaskStatus.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\TaskStatus.cs",
+              "RelativeToolTip": "Models\\TaskStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:41.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProjectStatus.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\ProjectStatus.cs",
+              "RelativeDocumentMoniker": "Models\\ProjectStatus.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\ProjectStatus.cs",
+              "RelativeToolTip": "Models\\ProjectStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:28.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:39.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Document.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "Models\\Document.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Document.cs",
+              "RelativeToolTip": "Models\\Document.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:38.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Models\\Message.cs",
+              "ToolTip": "D:\\ltw n\u00E2ng cao\\WNC_G13\\Models\\Message.cs",
+              "RelativeToolTip": "Models\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:24.541Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

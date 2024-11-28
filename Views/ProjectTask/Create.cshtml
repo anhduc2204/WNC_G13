@@ -1,0 +1,135 @@
+@model WNC_G13.Models.ProjectTask
+
+@{
+    ViewData["Title"] = "Tạo Task Mới";
+}
+
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<h2 class="mt-3">@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post" class="mb-3">
+    <!-- Project ID (Hiển thị và truyền ngầm vào form) -->
+    <div class="form-group">
+        @* <label>Project ID:</label>
+        <span>@ViewBag.ProjectId</span> <!-- Hiển thị ProjectId --> *@
+        <input type="hidden" asp-for="ProjectId" value="@ViewBag.ProjectId" />
+    </div>
+
+    <!-- Tên Task -->
+    <div class="form-group">
+        <label asp-for="TaskName">Tên Task:</label>
+        <input asp-for="TaskName" class="form-control" />
+        <span asp-validation-for="TaskName" class="text-danger"></span>
+    </div>
+
+    <!-- Mô tả -->
+    <div class="form-group">
+        <label asp-for="Description">Mô tả:</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <!-- Trạng thái -->
+    <div class="form-group">
+        <label asp-for="Status">Trạng thái:</label>
+        <select asp-for="Status" class="form-control">
+            <option value="1">Chưa bắt đầu</option>
+            <option value="2">Đang tiến hành</option>
+            <option value="3">Hoàn thành</option>
+            <option value="4">Bị trì hoãn</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <!-- Ngày hoàn thành -->
+    <div class="form-group">
+        <label asp-for="DueDate">Ngày hoàn thành:</label>
+        <input asp-for="DueDate" type="date" class="form-control" />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+
+    <!-- Độ ưu tiên -->
+    <div class="form-group">
+        <label asp-for="Priority">Độ ưu tiên:</label>
+        <select asp-for="Priority" class="form-control">
+            <option value="1">Thấp</option>
+            <option value="2">Trung bình</option>
+            <option value="3">Cao</option>
+        </select>
+        <span asp-validation-for="Priority" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UserId">Thành viên thực hiện:</label>
+        <select asp-for="UserId" class="form-control" id="memberList">
+            <option value= "-1" selected>Chọn thành viên</nav></option>
+        </select>
+        <span asp-validation-for="UserId" class="text-danger"></span>
+    </div>
+
+    <!-- Ngày tạo (ẩn, tự động điền) -->
+    <input type="hidden" asp-for="CreatedAt" value="@DateTime.Now" />
+
+    <!-- Người tạo (ẩn) -->
+    <input type="hidden" asp-for="CreateBy" value="@ViewBag.CurrentUserId" />
+
+    <!-- Nút Submit -->
+    <button type="submit" class="btn btn-primary">Tạo Task</button>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        const projectId = @Html.Raw(ViewBag.ProjectId);
+        const memberList = document.getElementById('memberList');
+
+        try {
+            // Gọi API để lấy danh sách thành viên
+            const response = await fetch(`/ProjectTask/GetMembers?projectId=${projectId}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            // Kiểm tra phản hồi từ API
+            if (!response.ok) {
+                throw new Error('Không thể lấy danh sách thành viên');
+            }
+
+            // Chuyển đổi dữ liệu JSON
+            const members = await response.json();
+            console.log(members);
+
+            const option = document.createElement('option');
+            // Nếu không có thành viên
+            if (members.length === 0) {
+                const option = document.createElement('option');
+                option.innerHTML = 'Không có thành viên';
+                option.disabled = true;
+                memberList.appendChild(option);
+                return;
+            }
+
+            // Thêm từng thành viên vào bảng
+            members.forEach((member, index) => {
+                const option = document.createElement('option');
+                option.value = member.userId;
+                option.innerHTML = `
+                    <span>${member.fullName} - ${member.email}</span>
+                `;
+                memberList.appendChild(option);
+            });
+        } catch (error) {
+            console.error('Error:', error);
+            const option = document.createElement('option');
+            option.innerHTML = 'Không có thành viên';
+            option.disabled = true;
+            memberList.appendChild(option);
+        }
+    });
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

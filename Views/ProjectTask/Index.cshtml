@@ -1,0 +1,252 @@
+@model IEnumerable<WNC_G13.Models.ProjectTask>
+
+@using WNC_G13.Models
+@{
+    ViewBag.Title = "Quản Lý Công Việc Dự Án";
+}
+
+<link rel="stylesheet" href="~/css/backlog.css" />
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-12 col-md-3 sidebar bg-light">
+            <h5 class="sidebar-header">Dự Án: @ViewBag.ProjectName</h5>
+            <ul class="nav flex-column">
+                @* <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Project", new { organizationId = 1 })">Dự Án</a>
+                </li> *@
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Members", "ProjectTask", new { projectId = @ViewBag.ProjectId })">Thành viên</a>
+                </li>
+                @if (ViewBag.UserRole != Role.AdminRole)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Progress", "ProjectTask", new { projectId = @ViewBag.ProjectId })">Tiến độ nhiệm vụ</a>
+                    </li>
+                }
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Board", "ProjectTask")">Báo Cáo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Document", new { projectId = @ViewBag.ProjectId })">Tài liệu</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Chat", new { channelId = 1 })">Chat</a>
+                </li>
+                @* <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Setting", "Account")">Cài Đặt</a>
+                </li> *@
+            </ul>
+
+            <!-- Task Status Summary Section (placed below Cài Đặt) -->
+            <div class="task-status mt-4">
+                <div class="status-summary">
+                    <h5 class="status-summary-title">Thống Kê Trạng Thái Công Việc</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Chưa bắt đầu</span>
+                            <span class="badge badge-warning">@ViewBag.TaskStatusCount.NotReady</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Cần thực hiện</span>
+                            <span class="badge badge-info">@ViewBag.TaskStatusCount.ToDo</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Đang tiến hành</span>
+                            <span class="badge badge-primary">@ViewBag.TaskStatusCount.InProgress</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Hoàn thành</span>
+                            <span class="badge badge-success">@ViewBag.TaskStatusCount.Completed</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Bị trì hoãn</span>
+                            <span class="badge badge-secondary">@ViewBag.TaskStatusCount.Delayed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-12 col-md-9">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3>Quản lý Công Việc</h3>
+                <div>
+                    @if (ViewBag.UserRole == Role.AdminRole)
+                    {
+                        <a href="@Url.Action("Create", "ProjectTask", new { projectId = ViewBag.ProjectId })" class="btn btn-primary">+ Thêm Công Việc</a>
+                    }
+                </div>
+            </div>
+
+            <div class="task-status mt-4">
+
+                <!-- To Do Column -->
+                <div class="status-section">
+                    <h5 class="status-title">Cần thực hiện</h5>
+                    <ul class="list-group">
+                        @foreach (var task in Model.Where(t => t.Status == (int)WNC_G13.Models.TaskStatus.ToDo))
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <h6>@task.TaskName</h6>
+                                    <p>@task.Description</p>
+                                    @if(task.User != null){
+                                        <p>Thành viên: @task.User.FullName</p>
+                                    }else{
+                                        <p>Thành viên: Chưa xác định</p>
+                                    }
+                                    <p>@task.DueDate</p>
+                                </div>
+                                <div>
+                                    @* <span class="badge badge-pill badge-info">To Do</span> *@
+                                    @if (ViewBag.UserRole == Role.AdminRole)
+                                    {
+                                        <a class="btn btn-success" href="@Url.Action("Edit", "ProjectTask", new { id = task.Id })">Sửa</a>
+                                    }
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- In Progress Column -->
+                <div class="status-section">
+                    <h5 class="status-title">Đang tiến hành</h5>
+                    <ul class="list-group">
+                        @foreach (var task in Model.Where(t => t.Status == (int)WNC_G13.Models.TaskStatus.InProgress))
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <h6>@task.TaskName</h6>
+                                    <p>@task.Description</p>
+                                    @if(task.User != null){
+                                        <p>Thành viên: @task.User.FullName</p>
+                                    }else{
+                                        <p>Thành viên: Chưa xác định</p>
+                                    }
+                                    <p>@task.DueDate</p>
+                                </div>
+                                <div>
+                                    @* <span class="badge badge-pill badge-info">To Do</span> *@
+                                    @if (ViewBag.UserRole == Role.AdminRole)
+                                    {
+                                        <a class="btn btn-success" href="@Url.Action("Edit", "ProjectTask", new { id = task.Id })">Sửa</a>
+                                    }
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- Completed Column -->
+                <div class="status-section">
+                    <h5 class="status-title">Hoàn thành</h5>
+                    <ul class="list-group">
+                        @foreach (var task in Model.Where(t => t.Status == (int)WNC_G13.Models.TaskStatus.Completed))
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <h6>@task.TaskName</h6>
+                                    <p>@task.Description</p>
+                                    @if(task.User != null){
+                                        <p>Thành viên: @task.User.FullName</p>
+                                    }else{
+                                        <p>Thành viên: Chưa xác định</p>
+                                    }
+                                    <p>@task.DueDate</p>
+                                </div>
+                                <div>
+                                    @* <span class="badge badge-pill badge-info">To Do</span> *@
+                                    @if (ViewBag.UserRole == Role.AdminRole)
+                                    {
+                                        <a class="btn btn-success" href="@Url.Action("Edit", "ProjectTask", new { id = task.Id })">Sửa</a>
+                                    }
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- Delayed Column -->
+                <div class="status-section">
+                    <h5 class="status-title">Bị trì hoãn</h5>
+                    <ul class="list-group">
+                        @foreach (var task in Model.Where(t => t.Status == (int)WNC_G13.Models.TaskStatus.Delayed))
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <h6>@task.TaskName</h6>
+                                    <p>@task.Description</p>
+                                    @if(task.User != null){
+                                        <p>Thành viên: @task.User.FullName</p>
+                                    }else{
+                                        <p>Thành viên: Chưa xác định</p>
+                                    }
+                                    <p>@task.DueDate</p>
+                                </div>
+                                <div>
+                                    @* <span class="badge badge-pill badge-info">To Do</span> *@
+                                    @if (ViewBag.UserRole == Role.AdminRole)
+                                    {
+                                        <a class="btn btn-success" href="@Url.Action("Edit", "ProjectTask", new { id = task.Id })">Sửa</a>
+                                    }
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Toggle dropdown khi click vào nút
+        $('#dropdownMenuButton').click(function() {
+            $('.dropdown').toggleClass('show');
+        });
+
+        // Đóng dropdown khi click ra ngoài
+        $(document).click(function(e) {
+            if (!$(e.target).closest('.dropdown').length) {
+                $('.dropdown').removeClass('show');
+            }
+        });
+    });
+</script>
+
+<!-- JavaScript/jQuery -->
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // AJAX call to update project status when task status changes
+        function updateProjectStatus(projectId) {
+            $.ajax({
+                url: '@Url.Action("UpdateProjectStatus", "ProjectTask")',
+                type: 'POST',
+                data: {
+                    projectId: projectId
+                },
+                success: function (response) {
+                    if (response.success) {
+                        // Cập nhật trạng thái dự án trong UI
+                        if (response.status === 1) {
+                            // Nếu trạng thái dự án là "ToDo"
+                            $('#project-status').text('Dự án: Cần thực hiện');
+                        } else if (response.status === 0) {
+                            // Nếu trạng thái dự án là "NotReady"
+                            $('#project-status').text('Dự án: Chưa sẵn sàng');
+                        }
+                    }
+                },
+                error: function () {
+                    alert('Có lỗi xảy ra khi cập nhật trạng thái dự án.');
+                }
+            });
+        }
+    </script>
+}

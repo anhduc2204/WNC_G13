@@ -1,0 +1,207 @@
+/* Định dạng cho sidebar */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: #007bff;
+}
+
+.nav-link .badge {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+/* Định dạng phần chính */
+.container-fluid {
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.task-status {
+  margin-top: 20px;
+}
+
+.status-section {
+  margin-bottom: 30px;
+}
+
+.status-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.list-group-item h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.list-group-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+.badge {
+  padding: 8px 10px;
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.badge-primary {
+  background-color: #007bff;
+}
+
+/* Định dạng nút bấm */
+.btn-primary {
+  background-color: #ff7f50;
+  border: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #ff6347;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Định dạng phần thông báo và label */
+.label {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.label-orange {
+  background-color: #ff7f50;
+}
+
+.label-blue {
+  background-color: #007bff;
+}
+
+.label-green {
+  background-color: #28a745;
+}
+
+.label-red {
+  background-color: #dc3545;
+}
+
+/* Định dạng dropdown */
+.dropdown-menu {
+  display: none;
+  /* Ẩn dropdown menu mặc định */
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Thêm hiệu ứng mờ dần */
+  max-height: 300px;
+  /* Giới hạn chiều cao */
+  overflow-y: auto;
+  /* Thêm thanh cuộn dọc nếu danh sách dài */
+  width: 100%;
+  /* Đảm bảo dropdown không bị nhỏ hơn nút */
+}
+
+/* Hiển thị dropdown khi được click */
+.dropdown.show .dropdown-menu {
+  display: block;
+  /* Hiện dropdown khi class 'show' được thêm */
+  opacity: 1;
+}
+
+/* Hiệu ứng hover vào các item trong dropdown */
+.dropdown-item {
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Thêm hiệu ứng chuyển màu và di chuyển */
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+  /* Hiệu ứng phóng to nhẹ */
+}
+
+/* Hiệu ứng khi item được chọn (có thể thêm class 'selected') */
+.dropdown-item.selected {
+  background-color: #28a745;
+  /* Màu khi chọn */
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container-fluid .row {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .col-12.col-md-9 {
+    width: 100%;
+    margin-left: 0;
+  }
+}

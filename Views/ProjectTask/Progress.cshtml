@@ -1,0 +1,130 @@
+@using WNC_G13.Models
+
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <script>
+        // Kiểm tra nếu có thông báo lỗi và hiển thị nó
+        window.onload = function () {
+            var errorMessage = '@TempData["ErrorMessage"]';
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+        };
+    </script>
+</head>
+
+<h2>Nhiệm vụ được phân công</u></h2>
+@* <a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="btn btn-primary">Thêm thành viên</a> *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên task</th>
+            <th>Ghi chú</th>
+            <th>Mức ưu tiên</u></th>
+            <th>Hạn</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody id="taskList">
+       
+    </tbody>
+</table>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        fetchData();
+    });
+
+    const fetchData = async () => {
+        const projectId = @Html.Raw(ViewBag.ProjectId);
+        const taskList = document.getElementById('taskList');
+
+        try {
+            // Gọi API để lấy danh sách thành viên
+            const response = await fetch(`/ProjectTask/GetTaskProgress?projectId=${projectId}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            // Kiểm tra phản hồi từ API
+            if (!response.ok) {
+                throw new Error('Không thể lấy danh sách thành viên');
+            }
+
+            // Chuyển đổi dữ liệu JSON
+            const tasks = await response.json();
+
+            // Xóa nội dung cũ
+            taskList.innerHTML = '';
+
+            // Nếu không có thành viên
+            if (tasks.length === 0) {
+                taskList.innerHTML = '<tr><td colspan="5">Không có nhiệm vụ</td></tr>';
+                return;
+            }
+
+            // Thêm từng thành viên vào bảng
+            tasks.forEach((task, index) => {
+                const tr = document.createElement('tr');
+                tr.id = `task-${task.id}`;
+
+                tr.innerHTML = `
+                    <td>${task.taskName}</td>
+                    <td>${task.description ? task.description : ''}</td>
+                    <td>${task.priority}</td>
+                    <td>${task.dueDate}</td>
+                    <select class="form-control task-status" task-id="${task.id}">
+                        <option value="1" ${task.status === 1 ? 'selected' : ''}>Chưa bắt đầu</option>
+                        <option value="2" ${task.status === 2 ? 'selected' : ''}>Đang tiến hành</option>
+                        <option value="3" ${task.status === 3 ? 'selected' : ''}>Hoàn thành</option>
+                        <option value="4" ${task.status === 4 ? 'selected' : ''}>Bị trì hoãn</option>
+                    </select>
+                `;
+
+                const selectElement = tr.querySelector('.task-status');
+                selectElement.addEventListener('change', function (event) {
+                    // Lấy id của task từ thuộc tính data-task-id
+                    const taskId = event.target.getAttribute('task-id');
+                    const newStatus = event.target.value;
+                    updateTaskStatus(taskId, newStatus);
+                });
+
+                taskList.appendChild(tr);
+            });
+        } catch (error) {
+            console.error('Error:', error);
+            taskList.innerHTML = '<tr><td colspan="5">Đã xảy ra lỗi khi tải dữ liệu</td></tr>';
+        }
+    }
+
+    const updateTaskStatus = async (taskId, newValue) => {
+        @* console.log('id: ' + taskId + ' - ' + newValue); *@
+        try {
+            // Gọi API cập nhật trạng thái
+            const response = await fetch('/ProjectTask/UpdateTaskStatus', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    taskId: taskId,
+                    status: parseInt(newValue)
+                }),
+            });
+
+            if (response.ok) {
+                console.log('Trạng thái đã được cập nhật thành công');
+            } else {
+                console.error('Lỗi khi cập nhật trạng thái:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Lỗi khi gọi API:', error);
+        }
+    };
+
+</script>

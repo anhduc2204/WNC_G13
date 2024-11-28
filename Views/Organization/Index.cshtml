@@ -1,0 +1,97 @@
+@model IEnumerable<WNC_G13.Models.Organization>
+
+<h2>Danh Sách Tổ Chức</h2>
+
+@* @if (ViewBag.UserId != null)
+{
+    <p>ID Người Dùng: @ViewBag.UserId</p>
+}
+else
+{
+    <p>ID Người Dùng chưa đăng nhập.</p>
+} *@
+
+@if (ViewBag.UserRole == Role.AdminRole)
+{
+    <a asp-controller="Organization" asp-action="Create" class="btn btn-primary">Tạo Tổ Chức</a>
+}
+
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<head>
+    <title>@ViewData["Title"]</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Kiểm tra nếu có thông báo lỗi và hiển thị nó
+        window.onload = function () {
+            var errorMessage = '@TempData["ErrorMessage"]';
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+        };
+
+        function deleteOrganization(orgId) {
+            if (confirm("Bạn có chắc chắn muốn xóa tổ chức này không?")) {
+                $.ajax({
+                    url: '@Url.Action("Delete", "Organization")',
+                    type: 'POST',
+                    data: { id: orgId },
+                    success: function (result) {
+                        if (result.success) {
+                            $('#organization-' + orgId).remove(); // Xóa hàng khỏi bảng
+                            alert(result.message);
+                        } else {
+                            alert(result.message); // Hiển thị thông báo lỗi
+                        }
+                    },
+                    error: function () {
+                        alert("Đã xảy ra lỗi khi xóa tổ chức.");
+                    }
+                });
+            }
+        }
+    </script>
+</head>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Kế Hoạch Đăng Ký</th>
+            <th>Giới Hạn Lưu Trữ</th>
+            <th>Lưu Trữ Đã Sử Dụng</th>
+            <th>Người tạo</th>
+            @if (ViewBag.UserRole == Role.AdminRole)
+            {
+                <th>Thao tác</th>
+
+            }
+            <th>Dự Án</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var organization in Model)
+        {
+            <tr id="organization-@organization.Id">
+                <td>@organization.Name</td>
+                <td>@organization.SubscriptionPlan</td>
+                <td>@organization.StorageLimit</td>
+                <td>@organization.UsedStorage</td>
+                <td>@organization.CreatedBy</td>
+                @if (ViewBag.UserRole == Role.AdminRole)
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@organization.Id" class="btn btn-warning">Chỉnh Sửa</a>
+                        <button class="btn btn-danger" onclick="deleteOrganization(@organization.Id)">Xóa</button>
+                    </td>
+                }
+                <td>
+                    <a asp-controller="Project" asp-action="Index" asp-route-organizationId="@organization.Id"
+                        class="btn btn-success">
+                        Dự Án
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

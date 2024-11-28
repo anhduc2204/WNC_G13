@@ -1,0 +1,248 @@
+@* @model IEnumerable<WNC_G13.Models.ProjectMember> *@
+@using WNC_G13.Models
+
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <script>
+        // Kiểm tra nếu có thông báo lỗi và hiển thị nó
+        window.onload = function () {
+            var errorMessage = '@TempData["ErrorMessage"]';
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+        };
+    </script>
+</head>
+
+<h2>Thành viên</h2>
+<a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="btn btn-primary">Thêm thành viên</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Task cần làm</th>
+            <th>Task đang tiến hành</th>
+            <th>Task đã hoàn thành</th>
+            @* @if (ViewBag.IsAdmin)
+            {
+                <th>Thao tác</th>
+            } *@
+        </tr>
+    </thead>
+    <tbody id="MemberList">
+       
+    </tbody>
+</table>
+@* onclick="deleteMember(@member.User.Id, @member.Tasks[0].ProjectId)" *@
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Thêm thành viên</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input class="form-control" id="search" placeholder="Nhập email"/>
+            <div class="list-group mt-2" id="searchResult">
+                @* kết quả tìm kiếm *@
+            </div>
+        </div>
+        <div class="modal-footer">
+            @* <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button> *@
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const modal = document.getElementById('exampleModalToggle');
+        const searchInput = document.getElementById('search');
+        const searchResult = document.getElementById('searchResult');
+
+        fetchData();
+
+        // Lắng nghe sự kiện khi modal bị đóng
+        modal.addEventListener('hidden.bs.modal', function () {
+            // Reset giá trị của input
+            searchInput.value = '';
+            // Xóa kết quả tìm kiếm
+            searchResult.innerHTML = '';
+        });
+    });
+
+    document.getElementById('search').addEventListener('input', async function () {
+        console.log('search');
+        const query = this.value.trim(); 
+        const resultContainer = document.getElementById('searchResult');
+
+        // Nếu input trống, xóa danh sách kết quả và không gửi request
+        if (!query) {
+            resultContainer.innerHTML = '';
+            return;
+        }
+
+        try {
+            // Gọi đến action trong controller
+            const response = await fetch(`/Account/SearchUser?search=${encodeURIComponent(query)}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            // Kiểm tra phản hồi
+            if (!response.ok) {
+                throw new Error('Có lỗi xảy ra khi gọi API');
+            }
+
+            const data = await response.json(); // Chuyển đổi kết quả JSON
+
+            // Xóa kết quả cũ
+            resultContainer.innerHTML = '';
+
+            // Nếu không có dữ liệu, hiển thị thông báo
+            if (data.length === 0) {
+                resultContainer.innerHTML = '<div class="list-group-item">Không tìm thấy kết quả</div>';
+                return;
+            }
+
+            console.log(data);
+            // Hiển thị kết quả tìm kiếm
+            data.forEach(item => {
+                const listItem = document.createElement('div');
+                listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                listItem.innerHTML = `
+                    <div>
+                        <span><strong>${item.fullName}</strong></span>
+                        <br/>
+                        <spanp>${item.email}</spanp>
+                    </div>
+                    <button class="btn btn-primary" id="btnAddMember-${item.id}" onclick="handleAddMember(${item.id}, @ViewBag.ProjectId)">Thêm</button>
+                `;
+                resultContainer.appendChild(listItem);
+                checkMember(item.id, @ViewBag.ProjectId, `btnAddMember-${item.id}`)
+            });
+        } catch (error) {
+            console.error('Error:', error);
+            resultContainer.innerHTML = '<div class="list-group-item">Đã xảy ra lỗi khi tải dữ liệu</div>';
+        }
+    });
+
+    const handleAddMember = async (userId, projectId) => {
+        console.log('add id: ', userId + ' - ' + projectId);
+        try {
+            // Gọi đến action trong controller
+            const response = await fetch(`/Project/AddMember`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    userId: userId,      
+                    projectId: projectId
+                })
+            });
+
+            // Kiểm tra phản hồi
+            if (!response.ok) {
+                throw new Error('Có lỗi xảy ra khi gọi API');
+            }
+
+            const data = await response.json();
+            @* console.log(data); *@
+            if(data){
+                const btnAddMember = document.getElementById(`btnAddMember-${userId}`);
+                btnAddMember.innerHTML="Đã thêm";
+                btnAddMember.disabled = true;
+
+                fetchData();
+            }
+        }catch(err) {
+            console.error('Error:', err);
+        }
+    }
+
+    const checkMember = async (userId, projectId, elementId) => {
+        @* console.log('checkMember ', elementId); *@
+        const btnAddMember = document.getElementById(elementId);
+        const response = await fetch(`/Project/CheckMember`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                userId: userId,      
+                projectId: projectId
+            })
+        });
+
+        const data = await response.json();
+        @* console.log('result check: ', data.isExist) *@
+        if(data.isExist){
+            btnAddMember.innerHTML="Đã thêm";
+            btnAddMember.disabled = true;
+        }
+
+    }
+
+    const fetchData = async () => {
+        const projectId = @Html.Raw(ViewBag.ProjectId);
+        const memberList = document.getElementById('MemberList');
+
+        try {
+            // Gọi API để lấy danh sách thành viên
+            const response = await fetch(`/ProjectTask/GetMembersAndTask?projectId=${projectId}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            // Kiểm tra phản hồi từ API
+            if (!response.ok) {
+                throw new Error('Không thể lấy danh sách thành viên');
+            }
+
+            // Chuyển đổi dữ liệu JSON
+            const members = await response.json();
+
+            // Xóa nội dung cũ
+            memberList.innerHTML = '';
+
+            // Nếu không có thành viên
+            if (members.length === 0) {
+                memberList.innerHTML = '<tr><td colspan="5">Không có thành viên</td></tr>';
+                return;
+            }
+
+            // Thêm từng thành viên vào bảng
+            members.forEach((member, index) => {
+                const tr = document.createElement('tr');
+                tr.id = `member-${member.id}`;
+
+                tr.innerHTML = `
+                    <td>${member.fullName}</td>
+                    <td>${member.taskTodo}</td>
+                    <td>${member.taskInProgress}</td>
+                    <td>${member.taskCompleted}</td>
+                    @* <td>
+                        <button class="btn btn-danger" onclick="removeMember(${member.userId})">Xóa</button>
+                    </td> *@
+                `;
+                memberList.appendChild(tr);
+            });
+        } catch (error) {
+            console.error('Error:', error);
+            memberList.innerHTML = '<tr><td colspan="5">Đã xảy ra lỗi khi tải dữ liệu</td></tr>';
+        }
+    }
+    
+    @* const deleteMember *@
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>

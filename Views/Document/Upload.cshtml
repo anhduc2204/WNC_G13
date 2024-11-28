@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Upload Document";
+}
+
+<h2>Upload Document</h2>
+
+<form asp-action="Upload" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label for="documentFile">Document</label>
+        <input type="file" name="documentFile" id="documentFile" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="documentName">Document Name</label>
+        <input type="text" name="documentName" id="documentName" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea name="description" id="description" class="form-control"></textarea>
+    </div>
+
+    <!-- Thêm các tham số từ ViewBag vào hidden field để gửi lên server -->
+    <input type="hidden" name="taskId" value="@ViewBag.TaskId" />
+    <input type="hidden" name="projectTaskId" value="@ViewBag.ProjectTaskId" />
+    <input type="hidden" name="userId" value="@ViewBag.UserId" />
+
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>

@@ -1,0 +1,45 @@
+@model List<WNC_G13.Models.Message>
+
+@{
+    ViewData["Title"] = "Quản lý tin nhắn";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<div>
+    <a href="@Url.Action("Index", "Chat", new { channelId = 1 })" class="btn btn-primary">
+        Trang Chat
+    </a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Kênh</th>
+            <th>Người gửi</th>
+            <th>Nội dung tin nhắn</th>
+            <th>Ngày tạo</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model)
+        {
+            <tr>
+                <td>@message.Id</td>
+                <td>@message.Channel.ChannelName</td>
+                <td>@message.User.FullName</td>
+                <td>@message.MessageContent</td>
+                <td>@message.CreatedAt?.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td>
+                    <form method="post" asp-action="DeleteMessage" asp-route-messageId="@message.Id" onsubmit="return confirm('Bạn có chắc chắn muốn xóa tin nhắn này?');">
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

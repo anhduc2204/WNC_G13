@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WNC_G13.props" />
+</Project>

@@ -1,0 +1,105 @@
+@model IEnumerable<WNC_G13.Models.Document>
+
+@{
+    ViewData["Title"] = "Danh sách tài liệu";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+<h1>Danh sách tài liệu</h1>
+@* <p><strong>Project ID: </strong>@ViewBag.ProjectId</p>  *@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên tài liệu</th>
+            <th>Ngày tải lên</th>
+            <th>Mô tả</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var document in Model)
+        {
+            <tr>
+                <td>@document.DocumentName</td>
+                <td>@document.UploadedAt?.ToString("dd/MM/yyyy")</td>
+                <td>@document.Description</td>
+                <td>
+                    <a href="@document.DocumentUrl" target="_blank">Xem</a>
+                    <form asp-action="Delete" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@document.Id" />
+                        <input type="hidden" name="projectId" value="@ViewBag.ProjectId" />
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="btn btn-primary">Tải lên tài liệu mới</a>
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Thêm thành viên</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="fileUp" class="form-label">Chọn tài liệu</label>
+                    <input class="form-control" type="file" id="fileUp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Ghi chú</label>
+                    <textarea class="form-control" id="descUp" rows="3"></textarea>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="handleUpFile()">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const handleUpFile = async () => {
+        const projectId = @Html.Raw(ViewBag.ProjectId);
+        const fileUp = document.getElementById('fileUp');
+        const descUp = document.getElementById('descUp');
+        if (!fileUp) {
+            alert("Vui lòng chọn một tệp.");
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append("file", fileUp);
+        formData.append("description", descUp);
+        formData.append("projectId", projectId);
+
+        try {
+            const response = await fetch('/Document/UploadFile', {
+                method: 'POST',
+                body: formData,
+            });
+            console.log(response);
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data);
+            } else {
+                console.log("Đã xảy ra lỗi khi tải lên.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Đã xảy ra lỗi khi tải lên.");
+        }
+
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
